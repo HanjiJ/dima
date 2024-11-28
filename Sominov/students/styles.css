@@ -1,0 +1,89 @@
+/* Сброс стандартных отступов и маргинов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основной фон для всей страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* светло-серый фон */
+    color: #333; /* темный текст */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% высоты экрана */
+    flex-direction: column;
+}
+
+/* Контейнер для логотипа */
+.image-container {
+    text-align: center;
+    margin-bottom: 30px; /* Отступ снизу */
+}
+
+/* Логотип */
+.center-image {
+    max-width: 100%;
+    height: auto;
+    width: 150px; /* Фиксированная ширина логотипа */
+}
+
+/* Стили для формы */
+form {
+    background-color: white; /* Белый фон формы */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень вокруг формы */
+    width: 300px; /* Ширина формы */
+    text-align: center; /* Центрируем текст в форме */
+}
+
+/* Заголовок формы */
+form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #444;
+}
+
+/* Ввод текста */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd; /* Светло-серая рамка */
+    border-radius: 5px; /* Скругление углов */
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #007BFF; /* Синий цвет рамки при фокусе */
+    outline: none; /* Убираем стандартную подсветку */
+}
+
+/* Кнопка отправки */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF; /* Синий фон */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Более темный синий цвет при наведении */
+}
+
+/* Ошибки */
+p {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
